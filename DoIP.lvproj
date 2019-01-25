@@ -210,6 +210,7 @@
 			</Item>
 			<Item Name="Sequence File Opened Event Callback.vi" Type="VI" URL="../TSUI Dependencies/Sequence File Opened Event Callback.vi"/>
 			<Item Name="Start Execution Event Callback.vi" Type="VI" URL="../TSUI Dependencies/Start Execution Event Callback.vi"/>
+			<Item Name="Stop Button Click Event Callback.vi" Type="VI" URL="../TSUI Dependencies/Stop Button Click Event Callback.vi"/>
 			<Item Name="User Message Event Callback.vi" Type="VI" URL="../TSUI Dependencies/User Message Event Callback.vi"/>
 			<Item Name="Wait Event Callback.vi" Type="VI" URL="../TSUI Dependencies/Wait Event Callback.vi"/>
 		</Item>
