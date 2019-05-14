@@ -18,12 +18,6 @@
 					<Item Name="Reset DIO.vi" Type="VI" URL="../Instruments/National Instruments/DIO 6254/Reset DIO.vi"/>
 					<Item Name="Write Digital Single Line Single Point.vi" Type="VI" URL="../Instruments/National Instruments/DIO 6254/Write Digital Single Line Single Point.vi"/>
 				</Item>
-				<Item Name="Switch" Type="Folder">
-					<Item Name="Close Switch.vi" Type="VI" URL="../Instruments/National Instruments/Switch/Close Switch.vi"/>
-					<Item Name="Init Switch.vi" Type="VI" URL="../Instruments/National Instruments/Switch/Init Switch.vi"/>
-					<Item Name="Relay Control.vi" Type="VI" URL="../Instruments/National Instruments/Switch/Relay Control.vi"/>
-					<Item Name="Reset Switch.vi" Type="VI" URL="../Instruments/National Instruments/Switch/Reset Switch.vi"/>
-				</Item>
 			</Item>
 		</Item>
 		<Item Name="Support VIs" Type="Folder">
@@ -63,15 +57,6 @@
 			<Item Name="Main.vi" Type="VI" URL="../User Interface/Main.vi"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="instr.lib" Type="Folder">
-				<Item Name="niSwitch Close.vi" Type="VI" URL="/&lt;instrlib&gt;/niSwitch/niSwitch.llb/niSwitch Close.vi"/>
-				<Item Name="niSwitch Initialize With Topology.vi" Type="VI" URL="/&lt;instrlib&gt;/niSwitch/niSwitch.llb/niSwitch Initialize With Topology.vi"/>
-				<Item Name="niSwitch Relay Action.ctl" Type="VI" URL="/&lt;instrlib&gt;/niSwitch/niSwitch.llb/niSwitch Relay Action.ctl"/>
-				<Item Name="niSwitch Relay Control.vi" Type="VI" URL="/&lt;instrlib&gt;/niSwitch/niSwitch.llb/niSwitch Relay Control.vi"/>
-				<Item Name="niSwitch Reset.vi" Type="VI" URL="/&lt;instrlib&gt;/niSwitch/niSwitch.llb/niSwitch Reset.vi"/>
-				<Item Name="niSwitch Topologies.ctl" Type="VI" URL="/&lt;instrlib&gt;/niSwitch/niSwitch.llb/niSwitch Topologies.ctl"/>
-				<Item Name="niSwitch Wait For Debounce.vi" Type="VI" URL="/&lt;instrlib&gt;/niSwitch/niSwitch.llb/niSwitch Wait For Debounce.vi"/>
-			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="DAQmx Fill In Error Info.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/DAQmx Fill In Error Info.vi"/>
@@ -214,6 +199,75 @@
 			<Item Name="User Message Event Callback.vi" Type="VI" URL="../TSUI Dependencies/User Message Event Callback.vi"/>
 			<Item Name="Wait Event Callback.vi" Type="VI" URL="../TSUI Dependencies/Wait Event Callback.vi"/>
 		</Item>
-		<Item Name="Build Specifications" Type="Build"/>
+		<Item Name="Build Specifications" Type="Build">
+			<Item Name="DoIP" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{C64B376E-1065-4AF5-AB47-617247E03641}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{7CF1D19A-43C8-45F7-B038-06963C0B166E}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_winsec.description" Type="Str">http://www.Microsoft.com</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{3EE5D931-F524-4F41-A3B7-AF06FC600BA3}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">DoIP</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/DoIP</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{25955AED-4FF6-45BA-92C1-0C95FBE5EF60}</Property>
+				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">DoIP.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/DoIP/DoIP.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/DoIP/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{3EEF99D9-9B1F-43AA-B186-1DF644E6633C}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/User Interface/Main.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/User Interface/Configuration.vi</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[2].type" Type="Str">VI</Property>
+				<Property Name="Source[3].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[3].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Type defs</Property>
+				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[3].type" Type="Str">Container</Property>
+				<Property Name="Source[4].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[4].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/TSUI Dependencies</Property>
+				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[4].type" Type="Str">Container</Property>
+				<Property Name="Source[5].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[5].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/Support VIs</Property>
+				<Property Name="Source[5].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[5].type" Type="Str">Container</Property>
+				<Property Name="Source[6].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[6].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[6].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Instruments</Property>
+				<Property Name="Source[6].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[6].type" Type="Str">Container</Property>
+				<Property Name="SourceCount" Type="Int">7</Property>
+				<Property Name="TgtF_companyName" Type="Str">Zamtest</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">DoIP</Property>
+				<Property Name="TgtF_internalName" Type="Str">DoIP</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2019 Zamtest</Property>
+				<Property Name="TgtF_productName" Type="Str">DoIP</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{546F087F-0E05-444D-8C4B-0AA8A2ABB1A7}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">DoIP.exe</Property>
+			</Item>
+		</Item>
 	</Item>
 </Project>
